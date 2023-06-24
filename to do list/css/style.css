@@ -1,0 +1,126 @@
+/* import font family */
+@font-face {
+	font-family: roboto;
+	src: url(../font/Roboto-Regular.ttf);
+}
+
+/* style to all */
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: roboto;
+}
+
+/* navigation */
+.navbar{
+	padding: 0.4rem 6rem;
+	font-size: 1.1rem;
+	font-family: roboto;
+}
+.navbar-brand img{
+	width: 110px;
+}
+.navbar-nav .actived{
+	background: -webkit-linear-gradient(#a28cdd, #290a73);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+.nav-link:hover{
+	background: -webkit-linear-gradient(#a28cdd, #290a73);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+/* banner */
+#banner{
+	margin-top: 150px;
+	background: url(../img/home-banner.png);
+	background-position: 0% 25%;
+	background-repeat: no-repeat;
+	font-family: roboto;
+}
+.text-banner{
+	padding: 10rem 5rem;
+	font-size: 50px;
+}
+#banner img{
+	box-sizing: border-box;
+	width: 500px;
+	padding: 5rem 1rem;
+}
+#banner hr{
+	width: 200px;
+	margin-top: -20px;
+	margin-left: 55px;
+}
+.buttons button:hover{
+	background-color: rgb(255, 255, 255);
+	color: #290a73;
+	border: 2px solid #290a73;
+}
+
+/* about us */
+#about img{
+	width: 600px;
+	padding: 0rem 3.5rem;
+}
+.about-text{
+	padding: 3rem 3.5rem;
+}
+#about span{
+	display: block;
+	font-weight: 300px;
+	letter-spacing: 7px;
+}
+#about button:hover{
+	background-color: rgb(255, 255, 255);
+	color: #290a73;
+	border: 2px solid #290a73;
+}
+
+/* brands */
+#brands{
+ padding: 50px 60px;
+}
+.single-brand{
+	border: 0.5px solid rgb(227, 226, 226);
+	padding: 30px 15px;
+	margin: 15px 20px;
+	height: 100px;
+	width: 185px;
+	cursor: pointer;
+	transition: all 0.5s;
+}
+.single-brand:hover{
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+	transform: scale(1.1)
+}
+.single-brand img:hover{
+	filter: brightness(0.15);
+	transition: all 0.5s;
+}
+#brands span{
+	display: block;
+	font-weight: 300px;
+}
+.text-brand{
+	width: 400px;
+	height: 400px;
+	background-color: rgb(252, 242, 251);
+	z-index: -2;
+	margin-top: -380px;
+	margin-left: -50px;
+}
+#call-us{
+	background: url(../img/client-info-bg.png) no-repeat 10% 10%;
+	padding: 15px 190px;
+}
+#call-us h1{
+	font-weight: 800;
+	color: #290a73;
+	font-size: 60px;
+}
+.phone{
+	margin-top: 170px;
+}

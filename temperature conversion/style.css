@@ -1,0 +1,38 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+.container{
+	width: 40%;
+	min-width: 300px;
+	padding: 50px 30px;
+	border-radius: 10px;
+	background-color: lightpink;
+	display: flex;
+	justify-content: space-between;
+}
+.box1 , .box2{
+	width: 45%;
+	display: inline-block;
+}
+label{
+	font-size: 20px;
+	font-weight: bolder;
+	color: rgb(255, 255, 255);
+}
+input[type='number']{
+	width: 100%;
+	border: 0;
+	border-left: 5px solid gray;
+	outline: none;
+	border-radius: 5px;
+	height: 30px;
+	padding: 0 7px;
+}

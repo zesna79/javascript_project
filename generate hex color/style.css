@@ -1,0 +1,91 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	height: 100vh;
+	background-color: rgb(44, 44, 44);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	overflow-x: hidden;
+}
+.container{
+	width: 40%;
+	min-width: 300px;
+	max-width: 500px;
+	background-color: #474747;
+	border-radius: 10px;
+	padding: 30px 20px;
+}
+.output-color{
+	border: 5px solid white;
+	border-radius: 50%;
+	width: 200px;
+	height: 200px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.output-color .color{
+	width: 90%;
+	height: 90%;
+	background-color: rgb(12, 155, 155);
+	border-radius: 50%;
+}
+.hex-code{
+	background-color: transparent;
+	border: 3px solid white;
+	width: 100%;
+	padding: 10px;
+	border-radius: 7px;
+	color: aliceblue;
+	outline: none;
+	margin: 20px auto;
+}
+.btns{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+.generate , .copy{
+	width: 40%;
+	padding: 5px;
+	border-radius: 5px;
+	border: 0;
+	outline: none;
+	cursor: pointer;
+	font-weight: bold;
+	font-size: 18px;
+}
+.generate{
+	color: #ffffff;
+	background-color: rgb(12, 155, 155);
+}
+.copy{
+	border: 1px solid rgb(12, 155, 155);
+	background-color: transparent;
+	color: rgb(12, 155, 155);
+}
+@keyframes show {
+	0%{ scale: 0;}
+	100%{ scale: 1;}
+}
+.show{
+	animation: show 0.5s;
+}
+.alert{
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	background-color: #474747;
+	padding: 5px 20px;
+	color: #ffffff;
+	font-size: 20px;
+	border-radius: 5px;
+	transform: translateX(calc(100% + 10px));
+	transition: all 0.5s;
+}

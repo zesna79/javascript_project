@@ -1,0 +1,115 @@
+*, 
+*::before,
+*::after{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+:root{
+	--theme-color: rgb(191, 68, 92);
+}
+body{
+	height: 100vh;
+}
+.container{
+	width: 50%;
+	min-width: 300px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+	border-radius: 15px;
+	margin: 150px auto 50px;
+	letter-spacing: 1px;
+	text-align: center;
+}
+.image{
+	width: 100%;
+	background-color: var(--theme-color);
+	border-radius: 15px 15px 0 0;
+	margin: 0 auto 30px;
+}
+.image img{
+	width: 100px;
+	border-radius: 50%;
+	position: relative;
+	top: 30px;
+	border: 3.5px solid white;
+}
+#name{
+	color: var(--theme-color);
+	margin: 3px;
+}
+.members{
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	margin: 30px auto;
+}
+.members span{
+	color: var(--theme-color);
+	margin: 3px 0;
+	font-weight: bold;
+}
+.buttons{
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	margin: 0 auto 30px;
+}
+.buttons button{
+	width: 25%;
+	padding: 5px 10px;
+	border-radius: 5px;
+	border: 0;
+	outline: none;
+	cursor: pointer;
+}
+.buttons button:first-child{
+	background-color: var(--theme-color);
+	color: #ffffff
+}
+.buttons button:last-child{
+	color: var(--theme-color);
+	background-color: transparent;
+	border: 1px solid var(--theme-color);
+}
+.colors{
+	width: 50%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+	border-radius: 15px;
+	margin: 0 auto;
+	letter-spacing: 1px;
+	text-align: center;
+}
+.colors .btn{
+	width: 30px;
+	height: 30px;
+	margin: 10px;
+	border-radius: 50%;
+	outline: none;
+	border: 0;
+	cursor: pointer;
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.colors .btn1{
+	background-color: rgb(191, 68, 92);
+}
+.colors .btn2{
+	background-color: rgb(54, 80, 144);
+}
+.colors .btn3{
+	background-color: rgb(85, 165, 104);
+}
+.colors .btn4{
+	background-color: rgb(161, 105, 197);
+}
+.colors .btn5{
+	background-color: rgb(68, 156, 191);
+}

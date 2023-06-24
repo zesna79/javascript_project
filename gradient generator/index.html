@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>gradient generator</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+	<a href="https://www.flaticon.com/free-icons/user" title="user icons"></a>
+	<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+	<div class="container">
+		<div class="colors">
+			<input type="color" id="color1" value="#858585">
+			<input type="color" id="color2" value="#578555">
+		</div>
+		<div class="buttons">
+			<button id="btn1" onclick="setDirection('to top' , this)" class="active"><i class="fa fa-arrow-up" aria-hidden="true"></i></button>
+			<button id="btn2" onclick="setDirection('to bottom' , this)"><i class="fa fa-arrow-down" aria-hidden="true"></i></button>
+			<button id="btn3" onclick="setDirection('to right' , this)"><i class="fa fa-arrow-right" aria-hidden="true"></i></button>
+			<button id="btn4" onclick="setDirection('to left' , this)"><i class="fa fa-arrow-left" aria-hidden="true"></i></button>
+			<button id="btn5" onclick="setDirection('to top right' , this)"><i class="fa fa-arrow-up rotate" aria-hidden="true"></i></button>
+			<button id="btn6" onclick="setDirection('to bottom left' , this)"><i class="fa fa-arrow-down rotate" aria-hidden="true"></i></button>
+			<button id="btn7" onclick="setDirection('to bottom right' , this)"><i class="fa fa-arrow-right rotate" aria-hidden="true"></i></button>
+			<button id="btn8" onclick="setDirection('to top left' , this)"><i class="fa fa-arrow-left rotate" aria-hidden="true"></i></button>
+		</div>
+		<button id="generator">GENERATE</button>
+		<div class="output">
+			<textarea id="code" rows="5" value="dfcgvhbjnk"></textarea>
+			<button id="copy">copy</button>
+		</div>
+	</div>
+	<script src="./script.js"></script>
+</body>
+</html>

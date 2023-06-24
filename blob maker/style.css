@@ -1,0 +1,89 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: snow;
+}
+.container{
+	width: 50%;
+	min-width: 300px;
+	padding: 40px 20px;
+	border-radius: 10px;
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+	background-color: #ffffff;
+	text-align: center;
+}
+.blob{
+	width: 100%;
+	min-height: 200px;
+	background-color: rgb(231, 237, 247);
+	border-radius: 5px;
+	padding: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.shape{
+	width: 100px;
+	height: 100px;
+	background: linear-gradient(rgb(224, 170, 224) , rgb(187, 73, 130));
+	border-radius: 5px 5px 5px 5px / 5px 5px 5px 5px;
+	box-shadow: rgba(100, 100, 111, 0.35) 0px 7px 29px 0px;
+}
+.size{
+	display: flex;
+	justify-content: space-between;
+	margin: 30px 10px;
+}
+.size input{
+	width: 30%;
+	outline: none;
+	border: 1px solid gray;
+	border-radius: 5px;
+	height: 25px;
+	padding: 5px;
+	font-weight: bold;
+}
+.size input:focus{
+	border-color: rgb(199, 92, 145);
+	color: rgb(199, 92, 145);
+}
+.radius{
+	width: 100%;
+}
+.radius input[type='range']{
+	width: 40%;
+	margin: 5px;
+	cursor: pointer;
+}
+.code{
+	width: 100%;
+	margin: 30px auto 0;
+}
+.code input{
+	width: 80%;
+	outline: none;
+	border: 0;
+	border-radius: 5px;
+	height: 35px;
+	background-color: rgb(231, 237, 247);
+	margin-right: 5px;
+	padding: 5px;
+}
+.code button{
+	width: 15%;
+	outline: none;
+	border: 0;
+	border-radius: 5px;
+	height: 35px;
+	background-color: rgb(199, 92, 145);
+	color: #ffffff;
+	font-size: 16px;
+	cursor: pointer;
+}

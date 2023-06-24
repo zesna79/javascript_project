@@ -1,0 +1,36 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.container{
+	width: 40%;
+	min-width: 300px;
+	padding: 40px 30px;
+	text-align: center;
+	border-radius: 10px;
+	background-color: rgb(186, 229, 215);
+}
+textarea{
+	width: 100%;
+	border: 1px solid lightgrey;
+	outline: none;
+	resize: none;
+	border-radius: 5px;
+	padding: 7px;
+	color: gray;
+	letter-spacing: 1px;
+	text-align: justify;
+}
+.character{
+	font-size: 20px;
+	margin-top: 10px;
+	text-align: right;
+	color: gray;
+}

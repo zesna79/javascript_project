@@ -1,0 +1,48 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.container{
+	width: 80%;
+	height: 600px;
+	min-width: 300px;
+	display: flex;
+	align-items: center;
+	position: relative;
+	border-radius: 10px;
+	overflow: hidden;
+}
+.container img{
+	position: absolute;
+	width: 100%;
+	text-align: center;
+}
+.container input{
+	position: absolute;
+	width: calc(100% + 30px);
+	top: 50%;
+	appearance: none;
+	background-color: transparent;
+	outline: none;
+	margin-left: -15px;
+	cursor: pointer;
+}
+.container input::-webkit-slider-thumb{
+	-webkit-appearance: none;
+	width: 30px;
+	height: 30px;
+	border-radius: 30%;
+	background: url(./2648925-200.png);
+	background-size: contain;
+	background-color: rgba(99, 187, 209, 0.5)
+}
+#my-img{
+	clip-path: polygon(0 0, 50% 0, 50% 100%, 0 100%);
+}

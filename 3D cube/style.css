@@ -1,0 +1,64 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.container{
+	width: 50%;
+	min-width: 300px;
+}
+.cube{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	perspective: 800px;
+	perspective-origin: 50%;
+}
+.images{
+	position: relative;
+	width: 300px;
+	height: 300px;
+	transform-style: preserve-3d;
+	transition: all 0.5s;
+}
+.cube img{
+	position: absolute;
+	width: 100%;
+	transform: translateZ(0);
+	background-color: #ffffff;
+}
+#dice3{
+	transform: translateZ(150px);
+}
+#dice4{
+	transform: translateZ(-150px) rotateY(-270deg);
+	transform-origin: 100% 0;
+}
+#dice5{
+	transform: translateZ(-150px) rotateY(270deg);
+	transform-origin: 0 0;
+}
+#dice6{
+	transform: translateZ(-150px) rotateY(180deg);
+}
+.buttons{
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	margin-top: 50px;
+}
+.buttons button{
+	border: 3px solid orangered;
+	background-color: transparent;
+	outline: none;
+	padding: 5px 30px;
+	font-size: 20px;
+	border-radius: 10px;
+	cursor: pointer;
+}

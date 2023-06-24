@@ -1,0 +1,38 @@
+*,
+*:before,
+*:after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+	width: 300px;
+	background-color: pink;
+	margin: 200px auto;
+	padding: 40px 15px;
+	border-radius: 10px;
+	text-align: center;
+}
+.timer{
+	font-size: 30px;
+	font-weight: bold;
+	background-color: rgb(130, 124, 125);
+	width: 120%;
+	margin-left: -10%;
+	padding: 7px 0;
+	border-radius: 3px;
+	color: aliceblue;
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.controls{
+	margin: 40px auto 0;
+}
+button{
+	font-size: 16px;
+	border: 0;
+	outline: none;
+	padding: 6px 15px;
+	border-radius: 5px;
+	cursor: pointer;
+	color: rgb(105, 102, 103);
+}

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>bmi</title>
+	<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<input type="range" id="weigth" value="20" min="20" max="150" oninput="calc()">
+			<span class="kg">20 kg</span>
+		</div>
+		<div class="row">
+			<input type="range" id="heigth" value="100" min="100" max="250" oninput="calc()">
+			<span class="cm">100 cm</span>
+		</div>
+		<p class="bmi">20.0</p>
+		<p class="result">normal weigth</p>
+	</div>
+	<script src="./script.js"></script>
+</body>
+</html>

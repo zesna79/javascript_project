@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>tip  calculator</title>
+	<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+	<div class="container">
+		<div class="wrapper">
+			<span class="title">Pill</span>
+			<div id="pill-amount">
+				<span class="amount">$</span>
+				<input type="number" value="0">
+			</div>
+		</div>
+		<div class="wrapper">
+			<span class="title">tip</span>
+			<span class="amount" id="tip-present-amount">$0</span>
+		</div>
+		<hr>
+		<div class="wrapper total">
+			<span class="title">total</span>
+			<span class="amount" id="total-amount">$0</span>
+		</div>
+		<div class="wrapper">
+			<span class="title">tip present</span>
+			<span class="amount" id="tip-present-txt">15%</span>
+		</div>
+		<input type="range" id="tip-present" value="15">
+		<div class="wrapper">
+			<span class="title">number of people</span>
+			<span class="amount" id="num-people-txt">1</span>
+		</div>
+		<input type="range" id="num-people" min="1" max="15" value="1">
+		<div class="wrapper result">
+			<span class="title">tip pre people</span>
+			<span class="amount" id="tip-pre">$0</span>
+		</div>
+		<div class="wrapper result">
+			<span class="title">total pre people</span>
+			<span class="amount" id="total-pre">$0</span>
+		</div>
+	</div>
+	<script src="./script.js"></script>
+</body>
+</html>

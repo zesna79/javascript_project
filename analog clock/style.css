@@ -1,0 +1,70 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	background-color: #f2f2f2;
+	/* min-width: 300px; */
+}
+.container{
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+img{
+	width: 50%;
+	max-width: 600px;
+	min-width: 200px;
+}
+.hour{
+	width: 8px;
+	height: 10vw;
+	max-height: 130px;
+	min-height: 40px;
+	background-color: rgb(240, 44, 44);
+	border-radius: 5px;
+	position: absolute;
+	bottom: 50%;
+	left: 50%;
+	transform: translate(-50%, 0%);
+	transform-origin: bottom;
+}
+.minute{
+	width: 5px;
+	height: 13vw;
+	max-height: 145px;
+	min-height: 55px;
+	background-color: rgb(68, 68, 68);
+	border-radius: 3px;
+	position: absolute;
+	bottom: 50%;
+	left: 50%;
+	transform: translate(-50%, 0%);
+	transform-origin: bottom;
+}
+.second{
+	width: 3px;
+	height: 15vw;
+	max-height: 170px;
+	min-height: 70px;
+	background-color: rgb(68, 68, 68);
+	border-radius: 2px;
+	position: absolute;
+	bottom: 50%;
+	left: 50%;
+	transform: translate(-50%, 0%);
+	transform-origin: bottom;
+}
+.point{
+	width: 15px;
+	height: 15px;
+	background-color: rgb(240, 44, 44);
+	border-radius: 50%;
+	position: absolute;
+	bottom: 50%;
+	left: 50%;
+	transform: translate(-50%, 50%);
+}

@@ -1,0 +1,78 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	background-color: rgb(188, 212, 212);
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.container{
+	width: 80%;
+	min-width: 300px;
+	max-width: 800px;
+	background-color: #ffffff;
+	padding: 30px 20px;
+	border-radius: 10px;
+	display: flex;
+	justify-content: space-between;
+}
+.settings{
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+input[type='range']{
+	width: 100%;
+	cursor: pointer;
+}
+input[type='radio']{
+	cursor: pointer;
+}
+.flipContainer{
+	font-size: 13px;
+	display: flex;
+	justify-content: space-between;
+	margin-top: 50px;
+}
+.image{
+	width: 45%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.image img{
+	width: 100%;
+	border-radius: 5px;
+}
+input[type='file']{
+	display: none;
+}
+.image label{
+	text-align: center;
+	display: inline-block;
+	width: 130px;
+	background-color: rgb(10, 109, 122);
+	color: #ffffff;
+	padding: 5px;
+	border-radius: 5px;
+	cursor: pointer;
+	margin-top: 5px;
+}
+@media screen and (max-width: 600px){
+	.container{
+		flex-direction: column;
+	}
+	.settings{
+		width: 100%;
+	}
+	.image{
+		width: 100%;
+		margin-top: 50px;
+	}
+}
